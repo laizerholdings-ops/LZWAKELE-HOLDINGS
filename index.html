@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LZWAKELE HOLDINGS (Pty) Ltd | CSD Supplier MAAA1741730 | Specialised Construction & Turnkey Facilities</title>
+
+    <!-- Primary SEO Meta Tags -->
+    <meta name="title" content="LZWAKELE HOLDINGS (Pty) Ltd | CSD Registered Supplier MAAA1741730 | South Africa">
+    <meta name="description" content="100% Black Woman-Owned CSD Registered Enterprise (MAAA1741730, Reg: 2026/569443/07). Specialising in Specialised Construction, Road Repairs, Building Maintenance, Paving, Plumbing, Cleaning & Facilities Management across South Africa.">
+    <meta name="keywords" content="LZWAKELE HOLDINGS, CSD MAAA1741730, 2026/569443/07, Road Construction, Pothole Patching, Building Maintenance, Commercial Cleaning, Painting, Fitted Cupboards, Ceiling Installation, Paving Works, Signage Installation, Plumbing Services, CSD Registered Contractor Ekurhuleni Gauteng">
+    <meta name="author" content="LZWAKELE HOLDINGS (Pty) Ltd">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lzwakele.co.za/">
+    <meta property="og:title" content="LZWAKELE HOLDINGS | CSD Registered Supplier MAAA1741730">
+    <meta property="og:description" content="100% Black Woman-Owned, CSD Registered & SARS Tax Compliant turnkey civil engineering, specialized construction, and facilities maintenance firm.">
+    <meta property="og:image" content="Road Construction.jpg">
+
+    <!-- Tailwind CSS & Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+    <style>
+        :root {
+            /* Brand Colors extracted from official logo */
+            --color-primary: #8CC63F; /* Logo Vibrant Lime Green */
+            --color-primary-hover: #76AA2E;
+            --color-dark-navy: #0B1736; /* Logo Rich Navy Blue */
+            --color-dark-surface: #050C1C;
+        }
+
+        .bg-accent { background-color: var(--color-primary); }
+        .hover\:bg-accent-hover:hover { background-color: var(--color-primary-hover); }
+        .text-accent { color: var(--color-primary); }
+        .border-accent { border-color: var(--color-primary); }
+        .focus\:ring-accent:focus { box-shadow: 0 0 0 2px var(--color-primary); border-color: var(--color-primary); }
+        
+        .bg-navy-brand { background-color: var(--color-dark-navy); }
+        .text-navy-brand { color: var(--color-dark-navy); }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050C1C;
+        }
+
+        /* --- BACKGROUND VIDEO & CANVAS LAYERS --- */
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -100;
+            filter: brightness(0.4) contrast(1.1);
+            object-fit: cover;
+            pointer-events: none;
+        }
+        
+        #hero-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -90;
+            pointer-events: none;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(11, 23, 54, 0.65) 0%, rgba(5, 12, 28, 0.82) 100%);
+            z-index: 0;
+        }
+        #hero > div {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- TRANSLUCENT GLASS SECTION OVERLAYS --- */
+        #services, #testimonials, #faq, #why-us, #stats, #about, #projects, #gallery, #methodology, #contact { 
+            background-color: rgba(5, 17, 38, 0.82) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #F8FAFC !important;
+        }
+
+        #services h2, #testimonials h2, #faq h2, #why-us h2, #about h2, #projects h2, #gallery h2, #methodology h2, #contact h2 {
+            color: #FFFFFF !important;
+        }
+        #services p, #testimonials p, #faq p, #why-us p, #about p, #projects p, #gallery p, #methodology p, #contact p {
+            color: #CBD5E1 !important;
+        }
+
+        .service-card {
+            background-color: rgba(11, 23, 54, 0.82) !important;
+            border-color: rgba(255, 255, 255, 0.12) !important;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .service-card h3 {
+            color: #FFFFFF !important;
+        }
+        .service-card p {
+            color: #94A3B8 !important;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.5);
+            border-color: var(--color-primary) !important;
+        }
+
+        /* Distinct Styling for Cleaning Services Showcase */
+        .cleaning-card-custom {
+            background: linear-gradient(135deg, rgba(11, 23, 54, 0.95) 0%, rgba(140, 198, 63, 0.25) 100%) !important;
+            border: 2px solid rgba(140, 198, 63, 0.45) !important;
+            box-shadow: 0 15px 35px -5px rgba(140, 198, 63, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cleaning-thumb {
+            transition: transform 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
+            cursor: pointer;
+        }
+        .cleaning-thumb.active {
+            border-color: #8CC63F !important;
+            transform: scale(1.06);
+            box-shadow: 0 0 15px rgba(140, 198, 63, 0.6);
+        }
+        .cleaning-thumb:hover {
+            transform: translateY(-3px) scale(1.03);
+        }
+
+        /* Custom Scrollbar for Cleaning Reel */
+        .cleaning-reel-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+        .cleaning-reel-scroll::-webkit-scrollbar-track {
+            background: rgba(5, 12, 28, 0.6);
+            border-radius: 4px;
+        }
+        .cleaning-reel-scroll::-webkit-scrollbar-thumb {
+            background: #8CC63F;
+            border-radius: 4px;
+        }
+
+        /* Dark Mode Overrides */
+        .dark #services, .dark #testimonials, .dark #faq, .dark #why-us, .dark #stats,
+        .dark #about, .dark #projects, .dark #gallery, .dark #methodology, .dark #contact { 
+            background-color: rgba(3, 9, 22, 0.88) !important;
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+        .dark #header.scrolled { background-color: rgba(11, 23, 54, 0.95); }
+        .dark #header.scrolled #nav-links a { color: #e2e8f0; }
+        .dark #header.scrolled #mobile-menu-button { color: #f8fafc; }
+        .dark #mobile-menu { background-color: #0B1736; }
+        .dark #mobile-menu a { color: #cbd5e1; }
+        .dark #mobile-menu a:hover { background-color: #12224A; }
+
+        .form-input { transition: all 0.3s ease-in-out; }
+        .form-input:focus {
+            box-shadow: 0 0 0 2px var(--color-primary);
+            border-color: var(--color-primary);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #header.scrolled {
+            background-color: white;
+            box-shadow: 0 4px 20px -2px rgba(11, 23, 54, 0.15);
+        }
+        #nav-links a {
+            color: white;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+        #header.scrolled #nav-links a {
+            color: #0B1736;
+            text-shadow: none;
+        }
+        #header.scrolled #nav-links a:hover { color: var(--color-primary); }
+        #mobile-menu-button { color: white; }
+        #header.scrolled #mobile-menu-button { color: #0B1736; }
+
+        .text-shadow-lg { text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.85); }
+        .text-shadow-md { text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8); }
+
+        .faq-question { cursor: pointer; }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+            transition: transform 0.3s ease-in-out;
+        }
+        .whatsapp-fab:hover { transform: scale(1.1); }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+            50% { transform: scale(1.06); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5); }
+        }
+        .whatsapp-fab { animation: pulse 2.5s infinite; }
+
+        /* Keyframes for Hero Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-h1 { animation: fadeInDown 1s 0.2s ease-out forwards; opacity: 0; }
+        .hero-p { animation: fadeInUp 1s 0.6s ease-out forwards; opacity: 0; }
+        .hero-a { animation: fadeInUp 1s 1s ease-out forwards; opacity: 0; }
+
+        #nav-links a { position: relative; padding-bottom: 6px; }
+        #nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--color-primary);
+            transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            border-radius: 2px;
+        }
+        #nav-links a:hover::after { width: 100%; }
+        #header.scrolled #nav-links a::after { background-color: var(--color-primary); }
+        
+        .cta-button { transition: all 0.3s ease-in-out !important; }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px -6px rgba(140, 198, 63, 0.55);
+        }
+
+        .title-underline {
+            transform: scaleX(0);
+            transition: transform 0.8s 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .scroll-reveal.visible .title-underline { transform: scaleX(1); }
+
+        /* Image comparison slider */
+        .before-after-container {
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+        }
+        .before-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            overflow: hidden;
+            z-index: 10;
+        }
+        .before-img img {
+            height: 100%;
+            max-width: none;
+        }
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: var(--color-primary);
+            z-index: 20;
+            cursor: ew-resize;
+        }
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 42px;
+            height: 42px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0B1736;
+            box-shadow: 0 0 14px rgba(0,0,0,0.5);
+        }
+
+        /* Logo Styling */
+        .header-logo-container {
+            transition: transform 0.3s ease;
+        }
+        .header-logo-container:hover {
+            transform: scale(1.02);
+        }
+        .header-logo-img {
+            height: 75px;
+            width: auto;
+            max-width: 260px;
+            object-fit: contain;
+            filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.4));
+        }
+        @media (min-width: 768px) {
+            .header-logo-img {
+                height: 90px;
+                max-width: 320px;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data with CSD Info -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "LZWAKELE HOLDINGS (Pty) Ltd",
+      "legalName": "LZWAKELE HOLDINGS (Pty) Ltd",
+      "taxID": "9061629318",
+      "identifier": "CSD MAAA1741730",
+      "description": "100% Black Woman-Owned CSD registered contractor (MAAA1741730, Reg: 2026/569443/07) offering Specialised Construction, Pothole Patching, Paving, Painting, Ceilings, Signage, Plumbing & Commercial Facilities Management.",
+      "url": "https://www.lzwakele.co.za",
+      "telephone": "+27799085166",
+      "email": "mbusomthembu15@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "77 Rifle Street, Sherwood",
+        "addressLocality": "Brakpan",
+        "addressRegion": "Gauteng",
+        "postalCode": "1541",
+        "addressCountry": "ZA"
+      },
+      "areaServed": "South Africa",
+      "knowsAbout": [
+        "Specialised Construction Activities",
+        "Services to Buildings & Landscape Activities",
+        "Wholesale Trade & Contracting",
+        "Road Construction & Pothole Patching",
+        "Commercial & Industrial Deep Cleaning",
+        "Building Maintenance",
+        "Painting, Ceilings & Cupboards",
+        "Paving Works",
+        "Signage Installation",
+        "Plumbing Services"
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-200 antialiased overflow-x-hidden">
+
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 border-b border-white/10">
+        <nav class="container mx-auto px-4 sm:px-6 py-2 flex justify-between items-center">
+            
+            <!-- Brand Badge -->
+            <a href="#" id="home-link-logo" class="flex items-center space-x-3 group header-logo-container">
+                <div class="bg-white p-1.5 rounded-xl shadow-lg border border-slate-200/40 flex items-center justify-center">
+                    <img src="logo.png" alt="LZWAKELE HOLDINGS (PTY) LTD" class="header-logo-img" onerror="this.src='https://placehold.co/280x90/00204D/ffffff?text=LZWAKELE+HOLDINGS';">
+                </div>
+            </a>
+
+            <div class="flex items-center">
+                <!-- Navigation Links - Strictly Home, Services, About, Contacts -->
+                <div id="nav-links" class="hidden md:flex items-center space-x-8 font-bold text-sm tracking-wide">
+                    <a href="#hero" class="nav-link transition duration-300">Home</a>
+                    <a href="#services" class="nav-link transition duration-300">Services</a>
+                    <a href="#about" class="nav-link transition duration-300">About</a>
+                    <a href="#contact" class="nav-link transition duration-300">Contacts</a>
+                </div>
+
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" type="button" aria-label="Toggle Theme" class="ml-6 text-white md:text-slate-200 hover:bg-white/10 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-accent rounded-lg text-sm p-2.5 transition">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 003.636 6.464l.707.707a1 1 0 001.414-1.414l-.707-.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1zm7 7a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-7.95-3.293a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707z"></path></svg>
+                </button>
+
+                <!-- Header CTA -->
+                <a href="#contact" class="nav-link hidden lg:block ml-5 bg-accent text-slate-950 font-black text-sm px-6 py-3 rounded-xl hover:bg-accent-hover shadow-lg cta-button">
+                    Request a Quote
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-2xl z-20 ml-4 p-2 focus:outline-none" aria-label="Toggle Navigation Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer - Strictly Home, Services, About, Contacts -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-brand border-b border-white/10 shadow-2xl">
+            <a href="#hero" class="nav-link block py-3.5 px-6 text-sm font-bold text-slate-200 hover:bg-white/10">Home</a>
+            <a href="#services" class="nav-link block py-3.5 px-6 text-sm font-bold text-slate-200 hover:bg-white/10">Services</a>
+            <a href="#about" class="nav-link block py-3.5 px-6 text-sm font-bold text-slate-200 hover:bg-white/10">About</a>
+            <a href="#contact" class="nav-link block py-3.5 px-6 text-sm font-bold text-slate-200 hover:bg-white/10">Contacts</a>
+            <a href="#contact" class="nav-link block text-center bg-accent text-white font-extrabold mx-4 my-4 px-5 py-3 rounded-xl hover:bg-accent-hover transition duration-300">Request a Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="min-h-screen flex items-center justify-center text-white overflow-hidden relative pt-32 pb-16">
+            <canvas id="hero-canvas"></canvas>
+            <div class="container mx-auto px-6 text-center">
+                
+                <div class="inline-flex flex-wrap items-center justify-center gap-2 px-5 py-2 rounded-full bg-slate-950/80 border border-accent/50 text-accent text-xs md:text-sm font-bold tracking-wide shadow-xl mb-6 hero-h1">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <i class="fa-solid fa-certificate"></i> CSD Active Supplier MAAA1741730 • Reg: 2026/569443/07
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 text-shadow-lg hero-h1 max-w-5xl mx-auto">
+                    LZWAKELE HOLDINGS <br><span class="text-accent">Specialised Construction & Turnkey Facilities</span>
+                </h1>
+
+                <!-- Expanded Top Description for immediate audience learning -->
+                <p class="text-base md:text-lg text-slate-200 max-w-4xl mx-auto mb-6 text-shadow-md hero-p font-normal leading-relaxed">
+                    <strong>LZWAKELE HOLDINGS (Pty) Ltd</strong> is a 100% Black Woman-Owned, CSD-registered South African enterprise delivering high-performance civil engineering, property refurbishments, and specialized facility solutions across Gauteng & nationwide. Founded by <strong>Mbuso Mthembu</strong>, we provide public state departments, municipalities, commercial property managers, and private developers with single-source contracting excellence.
+                </p>
+
+                <!-- Detailed Capability Pill Box at Top -->
+                <div class="max-w-4xl mx-auto bg-slate-950/80 border border-slate-800 backdrop-blur-md rounded-2xl p-5 mb-8 hero-p text-left">
+                    <div class="text-xs font-bold text-accent uppercase tracking-widest mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info"></i> About LZWAKELE HOLDINGS & How We Deliver
+                    </div>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed mb-3">
+                        We operate under three primary CSD industry classifications: <strong>Specialised Construction Activities</strong>, <strong>Services to Buildings & Landscape</strong>, and <strong>Wholesale Contracting</strong>. Our multi-skilled teams combine technical precision, top-tier SABS-approved materials, and hands-on site management to execute projects on schedule and strictly within budget parameters.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-[11px] font-semibold text-slate-200 pt-2 border-t border-slate-800">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-road text-accent"></i> Civil Road Repairs</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-paint-roller text-accent"></i> Building Refurbishment</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-broom text-cyan-400"></i> Commercial Cleaning</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-faucet-drip text-accent"></i> Plumbing & Reticulation</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center hero-a">
+                    <a href="#contact" class="bg-accent text-slate-950 font-black py-4 px-9 rounded-xl text-base hover:bg-accent-hover shadow-xl cta-button flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-file-signature"></i> Request a Free Quote
+                    </a>
+                    <a href="#services" class="bg-navy-brand/90 border border-slate-600 hover:border-accent text-white font-extrabold py-4 px-9 rounded-xl text-base transition flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fa-solid fa-cubes"></i> Explore Services
+                    </a>
+                </div>
+
+                <!-- Trust Badges Bar -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
+                    <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 backdrop-blur-md">
+                        <div class="text-xs text-slate-400 font-semibold">Ownership</div>
+                        <div class="text-sm font-extrabold text-emerald-400">100% Black Woman-Owned</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 backdrop-blur-md">
+                        <div class="text-xs text-slate-400 font-semibold">CSD Supplier No</div>
+                        <div class="text-sm font-extrabold text-white">MAAA1741730</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 backdrop-blur-md">
+                        <div class="text-xs text-slate-400 font-semibold">SARS Tax Status</div>
+                        <div class="text-sm font-extrabold text-amber-400">Tax Compliant (9061629318)</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 backdrop-blur-md">
+                        <div class="text-xs text-slate-400 font-semibold">Base Location</div>
+                        <div class="text-sm font-extrabold text-accent">Brakpan, Ekurhuleni (Gauteng)</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="content-below-hero" class="relative">
+            
+            <section id="services" class="py-24 relative z-10 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 scroll-reveal">
+                        <span class="text-xs font-bold text-accent tracking-widest uppercase bg-accent/10 px-4 py-1.5 rounded-full border border-accent/20">
+                            Full-Spectrum Contracting & Facilities
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-3">Our Core Service Offerings</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mt-3 text-base max-w-4xl mx-auto">
+                            LZWAKELE HOLDINGS (Pty) Ltd provides turnkey solutions across three primary National Treasury CSD classifications: <strong>Specialised Construction Activities</strong>, <strong>Services to Buildings & Landscape</strong>, and <strong>Contracting Wholesale Trade</strong>.
+                        </p>
+                        <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded title-underline"></div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <!-- SERVICE CARD 1: DISTINCT STYLED SELECT & SCROLL CLEANING DIVISION SHOWCASE -->
+                        <div class="sm:col-span-2 lg:col-span-3 cleaning-card-custom rounded-3xl p-6 sm:p-8 scroll-reveal flex flex-col justify-between group shadow-2xl">
+                            <div>
+                                <div class="flex flex-wrap justify-between items-center mb-6 gap-4">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-14 h-14 rounded-2xl bg-accent/20 border border-accent text-accent flex items-center justify-center text-2xl shadow-lg">
+                                            <i class="fa-solid fa-broom"></i>
+                                        </div>
+                                        <div>
+                                            <span class="text-[11px] font-extrabold uppercase tracking-widest text-slate-900 bg-accent px-3 py-1 rounded-full shadow-md">
+                                                ★ Specialized Interactive Reel
+                                            </span>
+                                            <h3 class="text-2xl font-black text-white mt-1">Cleaning & Facility Services Division</h3>
+                                        </div>
+                                    </div>
+                                    <button onclick="openServiceModal('cleaning')" class="bg-accent hover:bg-accent-hover text-slate-950 font-extrabold px-5 py-2.5 rounded-xl text-xs transition duration-300 shadow-md flex items-center gap-2">
+                                        Full Scope Details <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <p class="text-slate-300 text-sm leading-relaxed mb-6 max-w-5xl">
+                                    Our cleaning and facility division delivers comprehensive commercial, industrial, post-construction deep cleaning, high-reach glass cleaning, hygiene management, pest eradication, and landscape groundskeeping. <strong class="text-accent">Click any thumbnail or scroll horizontally below</strong> to inspect our visual operations gallery:
+                                </p>
+
+                                <!-- Interactive Select & Scroll Container -->
+                                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center bg-slate-950/70 p-4 sm:p-6 rounded-2xl border border-accent/30 backdrop-blur-md">
+                                    
+                                    <!-- Dynamic Featured Large Display -->
+                                    <div class="lg:col-span-5 relative h-64 sm:h-72 rounded-xl overflow-hidden border-2 border-accent/60 group/view shadow-xl">
+                                        <img id="cleaning-main-img" src="Commercial + Industrial Cleaning.jpg" alt="Cleaning Services Showcase" class="w-full h-full object-cover transition-all duration-500 transform scale-100 group-hover/view:scale-105" onerror="this.src='https://placehold.co/600x400/0B1736/ffffff?text=Commercial+Cleaning';">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+                                        <div class="absolute bottom-3 left-3 right-3 p-3 bg-slate-900/90 backdrop-blur-md rounded-lg border border-accent/30 text-xs">
+                                            <span class="text-[10px] text-accent uppercase font-bold tracking-wider">Currently Selected</span>
+                                            <p id="cleaning-main-title" class="text-white font-extrabold text-sm truncate">Commercial & Industrial Cleaning</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Horizontal Scrollable Thumbnail Deck ("Select & Scroll") -->
+                                    <div class="lg:col-span-7 space-y-3">
+                                        <div class="flex justify-between items-center text-xs">
+                                            <span class="text-slate-400 font-bold flex items-center gap-2">
+                                                <i class="fa-solid fa-hand-pointer text-accent"></i> Click to Select & Scroll Pictures:
+                                            </span>
+                                            <div class="flex space-x-2">
+                                                <button onclick="scrollCleaningReel(-200)" class="w-8 h-8 rounded-lg bg-slate-900 border border-accent/40 text-accent hover:bg-accent hover:text-slate-950 transition flex items-center justify-center">
+                                                    <i class="fa-solid fa-chevron-left text-xs"></i>
+                                                </button>
+                                                <button onclick="scrollCleaningReel(200)" class="w-8 h-8 rounded-lg bg-slate-900 border border-accent/40 text-accent hover:bg-accent hover:text-slate-950 transition flex items-center justify-center">
+                                                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Reel Deck -->
+                                        <div id="cleaning-reel" class="flex space-x-3 overflow-x-auto snap-x py-2 cleaning-reel-scroll scroll-smooth">
+                                            
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb active rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('Commercial + Industrial Cleaning.jpg', 'Commercial & Industrial Cleaning', this)">
+                                                <img src="Commercial + Industrial Cleaning.jpg" alt="Commercial Cleaning" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Commercial';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Commercial</span>
+                                            </div>
+
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('office cleaning.jpg', 'Office Maintenance Cleaning', this)">
+                                                <img src="office cleaning.jpg" alt="Office Cleaning" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Office';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Office</span>
+                                            </div>
+
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('Window & Carpet Cleaning.jpg', 'Window & Carpet Deep Cleaning', this)">
+                                                <img src="Window & Carpet Cleaning.jpg" alt="Window & Carpet" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Carpet';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Window & Carpet</span>
+                                            </div>
+
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('Adhoc Deep Cleaning.jpg', 'Adhoc Deep Cleaning & Cleardown', this)">
+                                                <img src="Adhoc Deep Cleaning.jpg" alt="Deep Cleaning" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Deep+Clean';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Deep Clean</span>
+                                            </div>
+
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('Hygiene & Pest Control Services.jpg', 'Hygiene & Pest Control Services', this)">
+                                                <img src="Hygiene & Pest Control Services.jpg" alt="Hygiene & Pest" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Pest+Control';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Pest Control</span>
+                                            </div>
+
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('Garden Services.jpg', 'Garden & Landscape Grounds Services', this)">
+                                                <img src="Garden Services.jpg" alt="Garden Services" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Garden';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Garden Grounds</span>
+                                            </div>
+
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('Supplies of Cleaning Materials.jpg', 'Cleaning Material & Consumables Supplies', this)">
+                                                <img src="Supplies of Cleaning Materials.jpg" alt="Cleaning Supplies" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Supplies';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Wholesale Supplies</span>
+                                            </div>
+
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('Entrance Matts.jpg', 'Entrance Matts & Placement', this)">
+                                                <img src="Entrance Matts.jpg" alt="Entrance Matts" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Matts';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Entrance Matts</span>
+                                            </div>
+
+                                            <div class="snap-start shrink-0 w-32 cleaning-thumb rounded-xl overflow-hidden border-2 border-slate-700 bg-slate-900 p-1" onclick="selectCleaningImage('Residential Cleaning.jpg', 'Residential Deep Cleaning', this)">
+                                                <img src="Residential Cleaning.jpg" alt="Residential Cleaning" class="h-20 w-full object-cover rounded-lg mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=Residential';">
+                                                <span class="text-[10px] font-bold text-slate-200 block text-center truncate px-1">Residential</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SERVICE CARD 2: PAINTING, CEILINGS & CUPBOARDS -->
+                        <div class="service-card bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal flex flex-col justify-between group">
+                            <div>
+                                <div class="w-14 h-14 rounded-xl bg-accent/15 border border-accent text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                                    <i class="fa-solid fa-paint-roller"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-accent transition-colors">Painting, Ceilings & Fitted Joinery</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                                    Turnkey interior and exterior property refurbishment. High-durability acrylic coatings, drywall partition installations, acoustic suspended ceilings, and custom-designed kitchen/bedroom fitted cupboards.
+                                </p>
+                                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6 border-t border-slate-200 dark:border-slate-700/60 pt-4">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Interior & Exterior Weatherproof Wall Painting</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Suspended Grid & Flush Plaster Ceilings</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Precision Built-in Kitchen & Bedroom Cupboards</li>
+                                </ul>
+                            </div>
+                            <button onclick="openServiceModal('finishing')" class="inline-flex items-center text-sm font-bold text-accent hover:underline">
+                                Learn Scope & Details <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                            </button>
+                        </div>
+
+                        <!-- SERVICE CARD 3: PAVING WORKS & HARDSCAPING -->
+                        <div class="service-card bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal flex flex-col justify-between group">
+                            <div>
+                                <div class="w-14 h-14 rounded-xl bg-accent/15 border border-accent text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                                    <i class="fa-solid fa-cubes-stacked"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-accent transition-colors">Paving Works & Civil Hardscaping</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                                    Commercial, municipal, and residential block paving. Engineered earthworks, G5/G7 sub-base mechanical compaction, precast concrete kerbing, drainage channel integration, and edge retention.
+                                </p>
+                                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6 border-t border-slate-200 dark:border-slate-700/60 pt-4">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Interlocking Pavers & Bevel Brick Paving</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Heavy-Duty Industrial Parking Lots & Depots</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Residential Driveways & Courtyard Hardscaping</li>
+                                </ul>
+                            </div>
+                            <button onclick="openServiceModal('paving')" class="inline-flex items-center text-sm font-bold text-accent hover:underline">
+                                Learn Scope & Details <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                            </button>
+                        </div>
+
+                        <!-- SERVICE CARD 4: ROAD CONSTRUCTION & POTHOLE PATCHING -->
+                        <div class="service-card bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal flex flex-col justify-between group">
+                            <div>
+                                <div class="w-14 h-14 rounded-xl bg-accent/15 border border-accent text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                                    <i class="fa-solid fa-road"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-accent transition-colors">Road Construction & Asphalt Pothole Patching</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                                    Civil road maintenance, asphalt surfacing, cold and hot premix pothole filling, base course stabilization, speed hump installation, and access road construction across municipal and private sectors.
+                                </p>
+                                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6 border-t border-slate-200 dark:border-slate-700/60 pt-4">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Saw-Cut Asphalt Edges & Bitumen Emulsion Tack Coating</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Hot & Cold Premix Pothole Filling & Roller Compaction</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Access Road Surfacing & Traffic Calming Humps</li>
+                                </ul>
+                            </div>
+                            <button onclick="openServiceModal('roadpotholes')" class="inline-flex items-center text-sm font-bold text-accent hover:underline">
+                                Learn Scope & Details <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                            </button>
+                        </div>
+
+                        <!-- SERVICE CARD 5: SIGNAGE INSTALLATION & ROAD MARKINGS -->
+                        <div class="service-card bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal flex flex-col justify-between group">
+                            <div>
+                                <div class="w-14 h-14 rounded-xl bg-accent/15 border border-accent text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                                    <i class="fa-solid fa-signs-post"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-accent transition-colors">Signage Installation & Thermoplastic Markings</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                                    Supply and installation of SABS-approved regulatory traffic signs, commercial estate directional boards, OHS site safety signage, and durable painted or thermoplastic road lines.
+                                </p>
+                                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6 border-t border-slate-200 dark:border-slate-700/60 pt-4">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Standard Regulatory Road & Municipal Traffic Signs</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Commercial Safety Notice Boards & Emergency Signs</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Thermoplastic & Solvent-Based Road Line Painting</li>
+                                </ul>
+                            </div>
+                            <button onclick="openServiceModal('signage')" class="inline-flex items-center text-sm font-bold text-accent hover:underline">
+                                Learn Scope & Details <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                            </button>
+                        </div>
+
+                        <!-- SERVICE CARD 6: PLUMBING & WATER RETICULATION -->
+                        <div class="service-card bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal flex flex-col justify-between group">
+                            <div>
+                                <div class="w-14 h-14 rounded-xl bg-accent/15 border border-accent text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                                    <i class="fa-solid fa-faucet-drip"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-accent transition-colors">Plumbing Services & Water Reticulation</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                                    Commercial, industrial, and municipal plumbing solutions. Pressurised water supply piping, geyser installations, industrial valve replacement, sewer line jetting, leak detection, and sanitaryware fit-outs.
+                                </p>
+                                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6 border-t border-slate-200 dark:border-slate-700/60 pt-4">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Commercial & Industrial Pipe Reticulation</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> High-Pressure Sewer Jetting & Leak Detection</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Geyser Maintenance & Sanitaryware Installation</li>
+                                </ul>
+                            </div>
+                            <button onclick="openServiceModal('plumbing')" class="inline-flex items-center text-sm font-bold text-accent hover:underline">
+                                Learn Scope & Details <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                            </button>
+                        </div>
+
+                        <!-- SERVICE CARD 7: BUILDING CONSTRUCTION & MASONRY -->
+                        <div class="service-card bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal flex flex-col justify-between group">
+                            <div>
+                                <div class="w-14 h-14 rounded-xl bg-accent/15 border border-accent text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                                    <i class="fa-solid fa-city"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-accent transition-colors">Building Construction & Masonry Works</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                                    Civil structural brickwork, concrete foundations, surface slab casting, security boundary walls, structural extensions, plastering, and commercial property developments.
+                                </p>
+                                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6 border-t border-slate-200 dark:border-slate-700/60 pt-4">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Reinforced Foundations & Concrete Surface Slabs</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Structural Bricklaying & Security Boundary Walls</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Commercial Additions, Extensions & Renovations</li>
+                                </ul>
+                            </div>
+                            <button onclick="openServiceModal('building')" class="inline-flex items-center text-sm font-bold text-accent hover:underline">
+                                Learn Scope & Details <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                            </button>
+                        </div>
+
+                        <!-- SERVICE CARD 8: GENERAL BUILDING SERVICES & SLA MAINTENANCE -->
+                        <div class="service-card bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal flex flex-col justify-between group">
+                            <div>
+                                <div class="w-14 h-14 rounded-xl bg-accent/15 border border-accent text-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-accent group-hover:text-white transition">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-accent transition-colors">General Building Services & Facility Maintenance</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                                    Turnkey planned preventative and emergency call-out maintenance contracts for government complexes, municipal offices, schools, and private commercial parks.
+                                </p>
+                                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-2 mb-6 border-t border-slate-200 dark:border-slate-700/60 pt-4">
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Scheduled Planned Preventative Maintenance (PPM)</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Emergency Reactive Repairs (Roofing, Water & Civil)</li>
+                                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Long-term Municipal & Corporate SLA Contracts</li>
+                                </ul>
+                            </div>
+                            <button onclick="openServiceModal('maintenance')" class="inline-flex items-center text-sm font-bold text-accent hover:underline">
+                                Learn Scope & Details <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-24 relative z-10 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                    <div class="flex flex-col md:flex-row items-center gap-12">
+                        <div class="md:w-1/2 scroll-reveal">
+                            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
+                                <img src="About Ndlela-Mathuthu Construction.jpg" alt="LZWAKELE HOLDINGS Team On Site" class="w-full h-[540px] object-cover" onerror="this.src='https://placehold.co/600x540/00204D/ffffff?text=LZWAKELE+HOLDINGS+ON-SITE';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/30 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6 p-5 bg-slate-900/90 backdrop-blur-md rounded-xl text-white border border-slate-700">
+                                    <div class="text-xs text-accent font-bold uppercase tracking-wider mb-1">Uncompromising Quality & Standards</div>
+                                    <div class="text-lg font-extrabold">100% Black Woman-Owned Enterprise</div>
+                                    <p class="text-xs text-slate-300 mt-1">CSD Supplier: MAAA1741730 • Reg No: 2026/569443/07 • SARS Tax Compliant</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="md:w-1/2 scroll-reveal">
+                            <span class="text-xs font-bold text-accent tracking-widest uppercase bg-accent/10 px-3 py-1 rounded-full border border-accent/20">
+                                CSD Verified Company Profile
+                            </span>
+                            <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-4 mb-4 leading-tight">
+                                Excellence in Specialised Construction & Facilities Management
+                            </h2>
+                            <div class="w-24 h-1 bg-accent mb-6 rounded title-underline"></div>
+                            
+                            <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed text-sm md:text-base">
+                                <strong class="text-slate-900 dark:text-white">LZWAKELE HOLDINGS (PTY) LTD</strong> (CIPC Reg: <strong>2026/569443/07</strong>) is a 100% Black Woman-Owned South African enterprise founded by <strong>Mbuso Mthembu</strong>. Fully registered on the National Treasury <strong>Central Supplier Database (CSD: MAAA1741730)</strong> with active <strong>SARS Tax Compliance status (Income Tax: 9061629318)</strong>, we provide high-performance contracting, civil maintenance, road repairs, commercial cleaning, and property management services across South Africa.
+                            </p>
+                            
+                            <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm md:text-base">
+                                Headquartered in Sherwood, Brakpan (Ekurhuleni, Gauteng), LZWAKELE HOLDINGS operates under three primary CSD industry classifications: Specialised Construction Activities, Services to Buildings & Landscape, and Wholesale Contracting. From asphalt road repairs, paving, and painting to plumbing, structural masonry, and turnkey facility cleaning, our team executes every project with technical precision and structural integrity.
+                            </p>
+
+                            <!-- CSD Verification Details Box -->
+                            <div class="p-5 rounded-xl bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 shadow-md mb-8 space-y-3">
+                                <div class="text-xs font-bold text-accent uppercase tracking-wider flex items-center gap-2">
+                                    <i class="fa-solid fa-shield-halved"></i> Official CSD Registration Details
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                                    <div><strong class="text-slate-900 dark:text-white">CSD Supplier No:</strong> MAAA1741730</div>
+                                    <div><strong class="text-slate-900 dark:text-white">Tax Status:</strong> Tax Compliant (9061629318)</div>
+                                    <div><strong class="text-slate-900 dark:text-white">CIPC Registration:</strong> 2026/569443/07</div>
+                                    <div><strong class="text-slate-900 dark:text-white">B-BBEE Standing:</strong> 100% Black Woman-Owned</div>
+                                    <div><strong class="text-slate-900 dark:text-white">Director / Owner:</strong> Mbuso Mthembu</div>
+                                    <div><strong class="text-slate-900 dark:text-white">Location:</strong> Ekurhuleni (Ward 97), GP</div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-4">
+                                <a href="#contact" class="bg-navy-brand text-white font-bold px-7 py-3.5 rounded-xl hover:bg-slate-800 dark:bg-accent dark:hover:bg-accent-hover transition duration-300 shadow-lg cta-button inline-flex items-center gap-2 text-sm">
+                                    <i class="fa-solid fa-paper-plane"></i> Contact Director / Bid Office
+                                </a>
+                                <a href="#methodology" class="border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 font-bold px-6 py-3.5 rounded-xl hover:border-accent transition duration-300 text-sm inline-flex items-center gap-2">
+                                    <i class="fa-solid fa-diagram-project"></i> Our Delivery Framework
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="methodology" class="py-24 relative z-10 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 scroll-reveal">
+                        <span class="text-xs font-bold text-accent tracking-widest uppercase bg-accent/10 px-3.5 py-1.5 rounded-full border border-accent/20">
+                            Proven Operational Framework
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-3">How We Execute Your Projects</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mt-3 text-base max-w-2xl mx-auto">
+                            Our step-by-step project delivery methodology ensures seamless compliance, transparent communication, and high-quality workmanship from start to finish.
+                        </p>
+                        <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded title-underline"></div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="bg-slate-50 dark:bg-slate-800/80 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 scroll-reveal relative group">
+                            <div class="text-4xl font-black text-accent/30 group-hover:text-accent transition duration-300 mb-4">01</div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Needs Analysis & Site Inspection</h3>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                We perform a thorough site evaluation to assess structural scope parameters, measure dimensions, and verify material requirements before work begins.
+                            </p>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800/80 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 scroll-reveal relative group">
+                            <div class="text-4xl font-black text-accent/30 group-hover:text-accent transition duration-300 mb-4">02</div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Technical Project Planning & BOQ</h3>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Our experts compile detailed Bills of Quantities (BOQs), material procurement plans, and project timelines aligned with client specifications and SABS engineering standards.
+                            </p>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800/80 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 scroll-reveal relative group">
+                            <div class="text-4xl font-black text-accent/30 group-hover:text-accent transition duration-300 mb-4">03</div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Artisan & Machinery Site Deployment</h3>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Our qualified teams execute civil engineering, road repairs, paving, painting, plumbing, or facility cleaning under active site supervision and strict quality control.
+                            </p>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800/80 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 scroll-reveal relative group">
+                            <div class="text-4xl font-black text-accent/30 group-hover:text-accent transition duration-300 mb-4">04</div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Quality Audit & Client Handover</h3>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Every job concludes with a final quality walkthrough, client snag list resolution, sign-off certificate handover, and ongoing customer support guarantees.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="stats" class="py-20 relative z-10 bg-navy-brand text-white border-y border-slate-800">
+                <div class="container mx-auto px-6">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div class="scroll-reveal">
+                            <i class="fa-solid fa-users text-accent text-4xl mb-3"></i>
+                            <p class="text-4xl md:text-5xl font-extrabold text-accent" data-target="100">0</p>
+                            <p class="text-sm font-bold text-slate-300 mt-2">% Black Woman-Owned</p>
+                        </div>
+                        <div class="scroll-reveal">
+                            <i class="fa-solid fa-database text-accent text-4xl mb-3"></i>
+                            <p class="text-4xl md:text-5xl font-extrabold text-emerald-400" data-target="100">0</p>
+                            <p class="text-sm font-bold text-slate-300 mt-2">% CSD & SARS Compliant</p>
+                        </div>
+                        <div class="scroll-reveal">
+                            <i class="fa-solid fa-award text-accent text-4xl mb-3"></i>
+                            <p class="text-4xl md:text-5xl font-extrabold text-amber-400" data-target="100">0</p>
+                            <p class="text-sm font-bold text-slate-300 mt-2">% Quality Guaranteed</p>
+                        </div>
+                        <div class="scroll-reveal">
+                            <i class="fa-solid fa-certificate text-accent text-4xl mb-3"></i>
+                            <p class="text-4xl md:text-5xl font-extrabold text-blue-400" data-target="100">0</p>
+                            <p class="text-sm font-bold text-slate-300 mt-2">% RSA Treasury Verified</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="py-24 relative z-10 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 scroll-reveal">
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white">Featured Operations Portfolio</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mt-3 text-base">Demonstrated capabilities across civil engineering, specialized commercial cleaning, and building maintenance.</p>
+                        
+                        <!-- Category Filter Buttons -->
+                        <div class="flex flex-wrap justify-center gap-3 mt-8">
+                            <button onclick="filterPortfolio('all')" class="portfolio-filter-btn active bg-accent text-white px-5 py-2 rounded-full text-xs font-bold shadow-md transition" data-filter="all">All Operations</button>
+                            <button onclick="filterPortfolio('civil')" class="portfolio-filter-btn bg-slate-800 text-slate-300 hover:text-white px-5 py-2 rounded-full text-xs font-bold border border-slate-700 transition" data-filter="civil">Civil & Construction</button>
+                            <button onclick="filterPortfolio('cleaning')" class="portfolio-filter-btn bg-slate-800 text-slate-300 hover:text-white px-5 py-2 rounded-full text-xs font-bold border border-slate-700 transition" data-filter="cleaning">Cleaning & Hygiene Division</button>
+                        </div>
+
+                        <div class="w-24 h-1 bg-accent mx-auto mt-6 rounded title-underline"></div>
+                    </div>
+
+                    <!-- Before & After Comparison Slider -->
+                    <div class="mb-16 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 scroll-reveal">
+                        <div class="text-center md:text-left mb-4">
+                            <span class="text-xs font-bold text-accent uppercase">Site Transformation</span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Interactive Site Before & After</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Drag slider left or right to compare initial condition vs completed civil engineering works.</p>
+                        </div>
+
+                        <div class="before-after-container rounded-xl h-[360px] md:h-[420px] w-full relative" id="comparison-slider">
+                            <!-- After Image -->
+                            <img src="Community Access Road.jpg" alt="Completed Access Road Project" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/800x420/00204D/ffffff?text=AFTER:+Completed+Road+Site';">
+                            <span class="absolute top-4 right-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-md z-10 shadow-md">AFTER: Completed Site</span>
+
+                            <!-- Before Image Overlay -->
+                            <div class="before-img" id="before-img-wrap">
+                                <img src="About Ndlela-Mathuthu Construction.jpg" alt="Unimproved Site Initial State" onerror="this.src='https://placehold.co/800x420/00122E/ffffff?text=BEFORE:+Initial+State';">
+                                <span class="absolute top-4 left-4 bg-navy-brand text-white text-xs font-bold px-3 py-1 rounded-md shadow-md">BEFORE: Initial Site</span>
+                            </div>
+
+                            <!-- Slider Handle -->
+                            <div class="slider-handle" id="slider-handle">
+                                <div class="slider-button">
+                                    <i class="fa-solid fa-arrows-left-right text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Cards Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="portfolio-grid">
+                        
+                        <!-- Construction Projects -->
+                        <div class="portfolio-item civil bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <img src="Asphalt & Tar Surfacing.jpg" alt="Asphalt and Tar Surfacing Project" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Asphalt+%26+Tar+Surfacing';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-accent uppercase">Roads & Potholes</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Asphalt & Tar Surfacing</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Saw-cut asphalt edges, cold/hot premix pothole patching, mechanical compaction, and road line painting.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item civil bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <img src="General Building.jpg" alt="General Building Maintenance" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=General+Building+Maintenance';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-accent uppercase">Building Maintenance</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Painting, Ceilings & Fitted Joinery</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Interior and exterior painting, suspended ceiling panel replacements, and custom fitted cupboards.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item civil bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <img src="Industrial Parking Lot.jpg" alt="Industrial Parking Lot Project" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Industrial+Parking+Lot';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-accent uppercase">Industrial Solutions</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Industrial Parking Lot & Heavy Paving</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Heavy-duty paving, kerbing, and safety signage installations for commercial & industrial depots.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item civil bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <img src="Paving Solutions.jpg" alt="Paving Solutions Project" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Paving+Solutions';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-accent uppercase">Paving Works</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Brick & Interlocking Paving</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Precision earthworks, sub-base compaction, bevel paving, and commercial walkway installations.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item civil bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <img src="Residential Driveway.jpg" alt="Residential Driveway Paving Project" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Residential+Driveway';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-accent uppercase">Residential Hardscaping</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Residential Driveway Paving</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">High-durability residential driveways, drainage channel installations, and kerb borders.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item civil bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <img src="Industrial Properties.jpg" alt="Industrial Properties Infrastructure" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Industrial+Properties';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-accent uppercase">Civil & Infrastructure</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Commercial Property Refurbishment</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Turnkey building maintenance, signage installation, structural repairs, and groundskeeping.</p>
+                            </div>
+                        </div>
+
+                        <!-- Specialized Cleaning Division Cards -->
+                        <div class="portfolio-item cleaning bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-cyan-500/40 scroll-reveal">
+                            <img src="Commercial + Industrial Cleaning.jpg" alt="Commercial & Industrial Cleaning Services" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Commercial+%2B+Industrial+Cleaning';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-cyan-400 uppercase">Cleaning Division</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Commercial & Industrial Cleaning</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Turnkey deep cleaning for warehouses, office blocks, commercial facilities, and corporate centers.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item cleaning bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-cyan-500/40 scroll-reveal">
+                            <img src="office cleaning.jpg" alt="Corporate Office Cleaning" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Office+Cleaning';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-cyan-400 uppercase">Facility Management</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Corporate Office Maintenance Cleaning</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Scheduled daily, weekly, or contract office cleaning, desk sanitisation, and waste removal.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item cleaning bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-cyan-500/40 scroll-reveal">
+                            <img src="Window & Carpet Cleaning.jpg" alt="Window and Carpet Deep Cleaning" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Window+%26+Carpet+Cleaning';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-cyan-400 uppercase">Specialised Cleaning</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Window & Carpet Deep Cleaning</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">High-reach window washing, steam carpet extraction, upholstery cleaning, and stain treatment.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item cleaning bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-cyan-500/40 scroll-reveal">
+                            <img src="Hygiene & Pest Control Services.jpg" alt="Hygiene & Pest Control Services" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Hygiene+%26+Pest+Control';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-cyan-400 uppercase">Hygiene Division</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Hygiene & Pest Control Solutions</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Washroom hygiene dispensers, fogging, sanitisation, pest management, and fumigation.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item cleaning bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-cyan-500/40 scroll-reveal">
+                            <img src="Garden Services.jpg" alt="Garden & Landscape Maintenance Services" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Garden+Services';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-cyan-400 uppercase">Landscape Activities</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Garden & Grounds Maintenance</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Lawn care, tree felling, weed control, landscaping, and commercial grounds upkeep.</p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item cleaning bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-md border border-cyan-500/40 scroll-reveal">
+                            <img src="Supplies of Cleaning Materials.jpg" alt="Supply of Cleaning Consumables and Equipment" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/400x200/00204D/ffffff?text=Cleaning+Supplies';">
+                            <div class="p-6">
+                                <span class="text-xs font-bold text-cyan-400 uppercase">Wholesale Trade</span>
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white mt-1">Cleaning Materials & Consumables Supply</h3>
+                                <p class="text-slate-600 dark:text-slate-400 text-xs mt-2">Bulk wholesale supply of eco-friendly detergents, sanitisers, paper products, and cleaning PPE.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="py-24 relative z-10 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 scroll-reveal">
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white">Full Operations Visual Gallery</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mt-3 text-base">On-site views of our civil construction teams, specialized cleaning division, and contracting crews across active sites.</p>
+                        <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded title-underline"></div>
+                    </div>
+
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Road Construction.jpg', 'Road Construction & Heavy Machinery Works')">
+                            <img src="Road Construction.jpg" alt="Road Construction Works" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Road+Construction';">
+                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2 py-1 rounded">Road Works</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Community Access Road.jpg', 'Community Access Road Construction')">
+                            <img src="Community Access Road.jpg" alt="Community Access Road Construction" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Access+Road';">
+                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2 py-1 rounded">Access Road</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('About Ndlela-Mathuthu Construction.jpg', 'LZWAKELE HOLDINGS Team On Site')">
+                            <img src="About Ndlela-Mathuthu Construction.jpg" alt="LZWAKELE HOLDINGS Team On Site" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=LZWAKELE+Team';">
+                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2 py-1 rounded">On-Site Team</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Paving Solutions.jpg', 'Paving Works & Compaction')">
+                            <img src="Paving Solutions.jpg" alt="Paving Works & Compaction" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Paving+Works';">
+                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2 py-1 rounded">Paving</div>
+                        </div>
+
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Asphalt & Tar Surfacing.jpg', 'Asphalt & Tar Surfacing Operations')">
+                            <img src="Asphalt & Tar Surfacing.jpg" alt="Asphalt & Tar Surfacing Operations" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Asphalt+Surfacing';">
+                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2 py-1 rounded">Asphalt</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Industrial Parking Lot.jpg', 'Industrial Parking Lot Development')">
+                            <img src="Industrial Parking Lot.jpg" alt="Industrial Parking Lot Development" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Parking+Lot';">
+                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2 py-1 rounded">Parking Lot</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Residential Properties.jpg', 'Residential Building & Renovations')">
+                            <img src="Residential Properties.jpg" alt="Residential Building & Renovations" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Building+Renovations';">
+                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2 py-1 rounded">Building</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Residential Driveway.jpg', 'Residential Driveway Paving Solution')">
+                            <img src="Residential Driveway.jpg" alt="Residential Driveway Paving Solution" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Residential+Driveway';">
+                            <div class="absolute bottom-2 left-2 bg-slate-950/80 text-white text-[10px] font-bold px-2 py-1 rounded">Driveway</div>
+                        </div>
+
+                        <!-- Specialized Cleaning & Facilities Images -->
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Commercial + Industrial Cleaning.jpg', 'Commercial & Industrial Deep Cleaning Operations')">
+                            <img src="Commercial + Industrial Cleaning.jpg" alt="Commercial Cleaning Operations" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Commercial+Cleaning';">
+                            <div class="absolute bottom-2 left-2 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Commercial Cleaning</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('office cleaning.jpg', 'Corporate Office & Desk Cleaning Services')">
+                            <img src="office cleaning.jpg" alt="Office Cleaning Services" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Office+Cleaning';">
+                            <div class="absolute bottom-2 left-2 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Office Cleaning</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Window & Carpet Cleaning.jpg', 'Window Washing & Deep Carpet Extraction')">
+                            <img src="Window & Carpet Cleaning.jpg" alt="Window and Carpet Cleaning" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Window+%26+Carpet';">
+                            <div class="absolute bottom-2 left-2 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Window & Carpet</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Adhoc Deep Cleaning.jpg', 'Adhoc Deep Cleaning & Post-Construction Cleardown')">
+                            <img src="Adhoc Deep Cleaning.jpg" alt="Adhoc Deep Cleaning" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Deep+Cleaning';">
+                            <div class="absolute bottom-2 left-2 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Deep Cleaning</div>
+                        </div>
+
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Hygiene & Pest Control Services.jpg', 'Hygiene Dispensers & Pest Control Services')">
+                            <img src="Hygiene & Pest Control Services.jpg" alt="Hygiene & Pest Control Services" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Hygiene+%26+Pest+Control';">
+                            <div class="absolute bottom-2 left-2 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Hygiene & Pest</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Garden Services.jpg', 'Commercial Garden & Landscape Maintenance')">
+                            <img src="Garden Services.jpg" alt="Garden & Landscape Maintenance" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Garden+Services';">
+                            <div class="absolute bottom-2 left-2 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Garden Services</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Supplies of Cleaning Materials.jpg', 'Supplies of Eco-Friendly Cleaning Materials')">
+                            <img src="Supplies of Cleaning Materials.jpg" alt="Cleaning Material Supplies" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Cleaning+Supplies';">
+                            <div class="absolute bottom-2 left-2 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Cleaning Supplies</div>
+                        </div>
+                        <div class="relative group rounded-xl overflow-hidden shadow-md cursor-pointer h-52" onclick="openLightbox('Entrance Matts.jpg', 'Entrance Matts & Moisture Barrier Placement')">
+                            <img src="Entrance Matts.jpg" alt="Entrance Matts" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/400x300/00204D/ffffff?text=Entrance+Matts';">
+                            <div class="absolute bottom-2 left-2 bg-cyan-600 text-white text-[10px] font-bold px-2 py-1 rounded">Entrance Matts</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials" class="py-24 relative z-10 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 scroll-reveal">
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white">What Our Clients Say</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mt-3 text-base">Building long-term corporate and municipal relationships through consistent delivery.</p>
+                        <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded title-underline"></div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <div class="text-accent text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm leading-relaxed">
+                                "LZWAKELE HOLDINGS delivered high-quality commercial cleaning and paving repairs for our facility in Ekurhuleni. CSD Supplier details (MAAA1741730) were verified effortlessly by our procurement team."
+                            </p>
+                            <div class="font-bold text-slate-900 dark:text-white">- M. Khumalo</div>
+                            <div class="text-xs text-slate-500">Commercial Sub-contractor</div>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <div class="text-accent text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm leading-relaxed">
+                                "Extremely satisfied with the asphalt pothole patching and road line marking on our access road. Completed on time, tax compliant, and within budget parameters."
+                            </p>
+                            <div class="font-bold text-slate-900 dark:text-white">- S. Naidoo</div>
+                            <div class="text-xs text-slate-500">Facility Manager</div>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800 p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 scroll-reveal">
+                            <div class="text-accent text-3xl mb-4"><i class="fas fa-quote-left"></i></div>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm leading-relaxed">
+                                "Their team handled our office building interior painting, suspended ceiling panel replacements, and fitted cupboards smoothly with exceptional workmanship."
+                            </p>
+                            <div class="font-bold text-slate-900 dark:text-white">- P. van der Merwe</div>
+                            <div class="text-xs text-slate-500">Property Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="py-24 relative z-10 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 scroll-reveal">
+                        <span class="text-xs font-bold text-accent tracking-widest uppercase bg-accent/10 px-3.5 py-1.5 rounded-full border border-accent/20">
+                            Procurement & Capability Guidance
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white mt-3">Frequently Asked Questions</h2>
+                        <p class="text-slate-600 dark:text-slate-400 mt-3 text-base">Comprehensive answers regarding CSD registration, tax status, and contracting capabilities.</p>
+                        <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded title-underline"></div>
+                    </div>
+
+                    <div class="max-w-3xl mx-auto space-y-4">
+                        
+                        <div class="bg-slate-50 dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 scroll-reveal overflow-hidden">
+                            <div class="faq-question flex justify-between items-center p-6 hover:bg-slate-100 dark:hover:bg-slate-700 transition duration-300" onclick="toggleFaq(this)">
+                                <h3 class="font-semibold text-lg text-slate-900 dark:text-white">What is LZWAKELE HOLDINGS' Central Supplier Database (CSD) registration details?</h3>
+                                <i class="fas fa-plus text-accent transform transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p class="px-6 pb-6 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 text-sm leading-relaxed">
+                                    LZWAKELE HOLDINGS (Pty) Ltd is fully registered on National Treasury's CSD under Supplier Number <strong>MAAA1741730</strong> (CIPC Reg: 2026/569443/07). We maintain active SARS Tax Compliance status (Income Tax: 9061629318) and verified 100% Black Woman Ownership status.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 scroll-reveal overflow-hidden">
+                            <div class="faq-question flex justify-between items-center p-6 hover:bg-slate-100 dark:hover:bg-slate-700 transition duration-300" onclick="toggleFaq(this)">
+                                <h3 class="font-semibold text-lg text-slate-900 dark:text-white">What specialized construction and civil maintenance services do you undertake?</h3>
+                                <i class="fas fa-plus text-accent transform transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p class="px-6 pb-6 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 text-sm leading-relaxed">
+                                    We undertake full-spectrum specialized building and civil works: asphalt & cold/hot premix pothole patching, access road construction, interlocking block paving, commercial wall painting, drywall & suspended ceiling installations, custom fitted cupboards, regulatory road & safety signage installation, and plumbing reticulation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 scroll-reveal overflow-hidden">
+                            <div class="faq-question flex justify-between items-center p-6 hover:bg-slate-100 dark:hover:bg-slate-700 transition duration-300" onclick="toggleFaq(this)">
+                                <h3 class="font-semibold text-lg text-slate-900 dark:text-white">What cleaning and facility management services does your team provide?</h3>
+                                <i class="fas fa-plus text-accent transform transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p class="px-6 pb-6 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 text-sm leading-relaxed">
+                                    Our specialized cleaning division offers turnkey commercial, office, and industrial deep cleaning, post-construction cleardown, window washing, carpet extraction, washroom hygiene dispensers, pest management, groundskeeping, and wholesale supply of eco-friendly cleaning consumables.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 scroll-reveal overflow-hidden">
+                            <div class="faq-question flex justify-between items-center p-6 hover:bg-slate-100 dark:hover:bg-slate-700 transition duration-300" onclick="toggleFaq(this)">
+                                <h3 class="font-semibold text-lg text-slate-900 dark:text-white">Which geographic regions in South Africa do you service?</h3>
+                                <i class="fas fa-plus text-accent transform transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p class="px-6 pb-6 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 text-sm leading-relaxed">
+                                    While headquartered at 77 Rifle Street, Sherwood, Brakpan (Ekurhuleni, Gauteng), LZWAKELE HOLDINGS operates nationwide across all nine provinces in South Africa for municipal, commercial, industrial, and major infrastructure contracts.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 scroll-reveal overflow-hidden">
+                            <div class="faq-question flex justify-between items-center p-6 hover:bg-slate-100 dark:hover:bg-slate-700 transition duration-300" onclick="toggleFaq(this)">
+                                <h3 class="font-semibold text-lg text-slate-900 dark:text-white">How do I request an official Request for Quotation (RFQ) or tender proposal?</h3>
+                                <i class="fas fa-plus text-accent transform transition-transform duration-300"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p class="px-6 pb-6 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-200 dark:border-slate-700 text-sm leading-relaxed">
+                                    You can submit your RFQ details directly through our online quote form below, email us at <strong>mbusomthembu15@gmail.com</strong>, or contact Director Mbuso Mthembu on <strong>+27 (0)79 908 5166</strong>. Written quotations and compliance documentation are dispatched promptly.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-24 relative z-10 text-white">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16 scroll-reveal">
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-white">Request an Official Quote</h2>
+                        <p class="text-slate-300 mt-3 text-base">Submit your RFQ specifications or project requirements below for a fast response.</p>
+                        <div class="w-24 h-1 bg-accent mx-auto mt-4 rounded title-underline"></div>
+                    </div>
+
+                    <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 bg-slate-950 border border-slate-800 text-slate-200 p-8 md:p-10 rounded-2xl shadow-2xl scroll-reveal">
+                        
+                        <!-- Contact Info Column -->
+                        <div class="md:w-1/2 space-y-6">
+                            <h3 class="text-2xl font-extrabold text-white mb-2">Company Contact Information</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed">
+                                LZWAKELE HOLDINGS (Pty) Ltd is ready to assist with your civil contracting, paving, road repairs, property maintenance, or commercial cleaning requirements nationwide.
+                            </p>
+
+                            <div class="space-y-4 pt-2">
+                                <p class="flex items-center gap-3">
+                                    <i class="fab fa-whatsapp text-accent text-xl w-6"></i> 
+                                    <span class="text-sm font-semibold">+27 (0)79 908 5166</span>
+                                </p>
+                                <p class="flex items-center gap-3">
+                                    <i class="fas fa-envelope text-accent text-xl w-6"></i> 
+                                    <span class="text-sm font-semibold">mbusomthembu15@gmail.com</span>
+                                </p>
+                                <p class="flex items-start gap-3">
+                                    <i class="fas fa-map-marker-alt text-accent text-xl w-6 mt-1"></i> 
+                                    <span class="text-sm font-semibold">77 Rifle Street, Sherwood, Brakpan, Gauteng, 1541 (Ward 97)</span>
+                                </p>
+                                <p class="flex items-center gap-3">
+                                    <i class="fas fa-clock text-accent text-xl w-6"></i> 
+                                    <span class="text-sm font-semibold">Mon - Fri: 07:30 - 17:00 (SAST)</span>
+                                </p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-900 border border-emerald-500/30 text-xs text-slate-300 mt-6 space-y-2">
+                                <div class="font-bold text-emerald-400 flex items-center gap-2">
+                                    <i class="fa-solid fa-file-circle-check"></i> CSD Verification Summary
+                                </div>
+                                <div class="text-[11px] text-slate-300 space-y-1">
+                                    <p>• Supplier Number: <strong>MAAA1741730</strong></p>
+                                    <p>• Income Tax Number: <strong>9061629318</strong> (Compliant)</p>
+                                    <p>• Company Reg: <strong>2026/569443/07</strong></p>
+                                    <p>• Director / Contact: <strong>Mbuso Mthembu</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quote Form -->
+                        <form id="contact-form" class="space-y-4 md:w-1/2" onsubmit="handleFormSubmit(event)">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Your Full Name *</label>
+                                <input type="text" name="name" required placeholder="e.g. Sipho Ndlovu" class="w-full p-3.5 rounded-lg border border-slate-700 bg-slate-900 text-white text-sm form-input">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Company / Organization *</label>
+                                <input type="text" name="company" required placeholder="e.g. Dept of Infrastructure / Enterprise Ltd" class="w-full p-3.5 rounded-lg border border-slate-700 bg-slate-900 text-white text-sm form-input">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Email Address *</label>
+                                <input type="email" name="email" required placeholder="s.ndlovu@domain.co.za" class="w-full p-3.5 rounded-lg border border-slate-700 bg-slate-900 text-white text-sm form-input">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Service Required *</label>
+                                <select id="form-service-select" name="service" required class="w-full p-3.5 rounded-lg border border-slate-700 bg-slate-900 text-white text-sm form-input">
+                                    <option value="" disabled selected>Select Primary Service</option>
+                                    <option>Cleaning Services</option>
+                                    <option>Road Construction & Pothole Patching</option>
+                                    <option>Painting, Ceilings & Fitted Cupboards</option>
+                                    <option>Paving Works & Kerbing</option>
+                                    <option>Signage Installation & Line Markings</option>
+                                    <option>Plumbing Services</option>
+                                    <option>Building Construction & Masonry</option>
+                                    <option>Services to Buildings & Landscape Activities</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-1">Scope / Message Details *</label>
+                                <textarea id="form-message-area" name="message" rows="4" required placeholder="Please state site location, expected start date, RFQ specifications, or specific scope..." class="w-full p-3.5 rounded-lg border border-slate-700 bg-slate-900 text-white text-sm form-input"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-accent text-white font-bold p-3.5 rounded-xl hover:bg-accent-hover shadow-md transition cta-button flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Submit Quote Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+            <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-accent transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="max-w-4xl w-full text-center space-y-4">
+                <img id="lightbox-img" src="" alt="Enlarged gallery view" class="max-h-[80vh] mx-auto rounded-xl shadow-2xl">
+                <div id="lightbox-caption" class="text-white font-bold text-lg"></div>
+            </div>
+        </div>
+
+        <!-- Service Overview Modal -->
+        <div id="service-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+            <div class="max-w-xl w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 text-white relative shadow-2xl">
+                <button onclick="closeServiceModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-2xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div id="modal-body" class="space-y-4">
+                    <!-- Dynamic modal content -->
+                </div>
+                <div class="pt-6 border-t border-slate-800 flex justify-end">
+                    <a href="#contact" onclick="closeServiceModal()" class="px-6 py-2.5 bg-accent text-white font-bold text-sm rounded-lg hover:bg-accent-hover transition">
+                        Request Quote for Service
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="success-message" class="fixed inset-0 bg-black/75 flex items-center justify-center hidden p-4 z-50">
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl text-center max-w-sm w-full text-white">
+                <div class="text-5xl text-emerald-400 mb-4"><i class="fas fa-check-circle"></i></div>
+                <h2 class="text-2xl font-bold mb-2">Quote Request Sent!</h2>
+                <p class="text-xs text-slate-400 mb-6">Thank you for contacting LZWAKELE HOLDINGS (Pty) Ltd. A representative will contact you shortly.</p>
+                <button onclick="closeSuccessModal()" class="bg-accent text-white font-bold py-2.5 px-6 rounded-lg hover:bg-accent-hover transition">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating WhatsApp FAB -->
+    <a href="https://wa.me/27799085166?text=Hello%20LZWAKELE%20HOLDINGS,%20I%20would%20like%20to%20request%20a%20quote." target="_blank" class="whatsapp-fab" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-slate-800 text-sm">
+                
+                <!-- Footer Logo Badge -->
+                <div class="flex items-center space-x-3">
+                    <div class="bg-white p-1.5 rounded-xl shadow border border-slate-200/20">
+                        <img src="logo.png" alt="LZWAKELE HOLDINGS (PTY) LTD" class="h-16 w-auto object-contain" onerror="this.src='https://placehold.co/200x60/00204D/ffffff?text=LZWAKELE+HOLDINGS';">
+                    </div>
+                </div>
+
+                <!-- Footer Navigation - Strictly Home, Services, About, Contacts -->
+                <div class="flex space-x-6 text-xs font-semibold">
+                    <a href="#hero" class="hover:text-accent transition">Home</a>
+                    <a href="#services" class="hover:text-accent transition">Services</a>
+                    <a href="#about" class="hover:text-accent transition">About</a>
+                    <a href="#contact" class="hover:text-accent transition">Contacts</a>
+                </div>
+            </div>
+
+            <div class="pt-8 text-center text-xs text-slate-500">
+                <p>&copy; <span id="year"></span> LZWAKELE HOLDINGS (PTY) LTD. All Rights Reserved.</p>
+                <p class="mt-1">100% Black Woman-Owned | CSD Supplier: MAAA1741730 | Reg: 2026/569443/07 | SARS Tax Compliant: 9061629318</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Service Detail Modal Data ---
+        const serviceData = {
+            cleaning: {
+                title: "Cleaning, Hygiene & Facility Services",
+                desc: "LZWAKELE HOLDINGS delivers a full suite of professional cleaning, hygiene, and facility upkeep solutions tailored for commercial properties, industrial sites, schools, and state complexes.",
+                visuals: [
+                    { img: "Commercial + Industrial Cleaning.jpg", label: "Commercial & Industrial Cleaning" },
+                    { img: "office cleaning.jpg", label: "Office Maintenance Cleaning" },
+                    { img: "Window & Carpet Cleaning.jpg", label: "Window & Carpet Deep Cleaning" },
+                    { img: "Adhoc Deep Cleaning.jpg", label: "Adhoc Deep Cleaning" },
+                    { img: "Hygiene & Pest Control Services.jpg", label: "Hygiene & Pest Control" },
+                    { img: "Garden Services.jpg", label: "Garden & Grounds Services" },
+                    { img: "Supplies of Cleaning Materials.jpg", label: "Cleaning Material Supplies" },
+                    { img: "Entrance Matts.jpg", label: "Entrance Matting Solutions" },
+                    { img: "Residential Cleaning.jpg", label: "Residential Deep Cleaning" }
+                ]
+            },
+            finishing: {
+                title: "Painting, Ceilings & Fitted Joinery",
+                desc: "Interior and exterior wall painting, decorative and suspended ceiling panel installation, drywalling, and precision fitted cupboards for kitchens, bedrooms, and office suites."
+            },
+            paving: {
+                title: "Paving Works & Civil Hardscaping",
+                desc: "Interlocking paving blocks, bevel pavers, concrete kerbing, driveway paving, commercial courtyard surfacing, sub-base preparation, and earthworks."
+            },
+            roadpotholes: {
+                title: "Road Construction & Asphalt Pothole Patching",
+                desc: "Asphalt cut-outs, cold/hot premix pothole patching, road base repairs, speed humps, access roads, and municipal road maintenance contracts."
+            },
+            signage: {
+                title: "Signage Installation & Thermoplastic Markings",
+                desc: "Installation of regulatory safety signs, municipal road signs, building directional signage, site safety boards, and high-durability painted road lines."
+            },
+            plumbing: {
+                title: "Plumbing Services & Water Reticulation",
+                desc: "Commercial, industrial, and residential plumbing, geyser installations, drain unblocking, pipe repairs, pressure valves, and water reticulation."
+            },
+            building: {
+                title: "Building Construction & Masonry Works",
+                desc: "Turnkey building construction, bricklaying, concrete slabs, foundation work, residential housing extensions, boundary walls, and structural alterations."
+            },
+            maintenance: {
+                title: "General Building Services & Facility Maintenance",
+                desc: "Reactive and preventative maintenance contracts for public sector infrastructure, corporate office facilities, and residential complexes."
+            }
+        };
+
+        // --- Cleaning Select & Scroll Logic ---
+        function selectCleaningImage(imgSrc, titleText, element) {
+            const mainImg = document.getElementById('cleaning-main-img');
+            const mainTitle = document.getElementById('cleaning-main-title');
+            if (mainImg) mainImg.src = imgSrc;
+            if (mainTitle) mainTitle.textContent = titleText;
+            
+            document.querySelectorAll('.cleaning-thumb').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            if (element) {
+                element.classList.add('active');
+            }
+        }
+
+        function scrollCleaningReel(amount) {
+            const reel = document.getElementById('cleaning-reel');
+            if (reel) {
+                reel.scrollBy({ left: amount, behavior: 'smooth' });
+            }
+        }
+
+        // --- FAQ Accordion Logic ---
+        function toggleFaq(btn) {
+            const faqItem = btn.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = btn.querySelector('i');
+
+            if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+                answer.style.maxHeight = '0px';
+                if (icon) icon.classList.remove('rotate-45');
+            } else {
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.style.maxHeight = '0px');
+                document.querySelectorAll('.faq-question i').forEach(ic => ic.classList.remove('rotate-45'));
+                
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                if (icon) icon.classList.add('rotate-45');
+            }
+        }
+
+        // --- Lightbox Popup ---
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+            if (img) img.src = src;
+            if (cap) cap.innerText = caption;
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+        }
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        // --- Service Modal ---
+        function openServiceModal(key) {
+            const modal = document.getElementById('service-modal');
+            const data = serviceData[key];
+            if (!data) return;
+            
+            let htmlContent = `
+                <div class="text-cyan-400 text-xs font-bold uppercase tracking-wider">Service Overview</div>
+                <h3 class="text-2xl font-bold text-white">${data.title}</h3>
+                <p class="text-sm text-slate-300 leading-relaxed mb-4">${data.desc}</p>
+            `;
+
+            if (data.visuals && data.visuals.length > 0) {
+                htmlContent += `<div class="text-xs font-bold text-slate-300 uppercase tracking-wider mt-4 mb-2">Specialised Divisions Showcase:</div>`;
+                htmlContent += `<div class="grid grid-cols-3 gap-2 max-h-56 overflow-y-auto pr-1">`;
+                data.visuals.forEach(v => {
+                    htmlContent += `
+                        <div class="bg-slate-800 rounded p-1.5 border border-slate-700/80 text-center">
+                            <img src="${v.img}" alt="${v.label}" class="h-16 w-full object-cover rounded mb-1" onerror="this.src='https://placehold.co/150x100/00204D/ffffff?text=LZWAKELE';">
+                            <span class="text-[10px] font-semibold text-slate-300 block truncate">${v.label}</span>
+                        </div>
+                    `;
+                });
+                htmlContent += `</div>`;
+            }
+
+            document.getElementById('modal-body').innerHTML = htmlContent;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeServiceModal() {
+            const modal = document.getElementById('service-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        // --- Portfolio Category Filter Logic ---
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('#portfolio-grid .portfolio-item');
+            const buttons = document.querySelectorAll('.portfolio-filter-btn');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.classList.add('bg-accent', 'text-white');
+                    btn.classList.remove('bg-slate-800', 'text-slate-300');
+                } else {
+                    btn.classList.remove('bg-accent', 'text-white');
+                    btn.classList.add('bg-slate-800', 'text-slate-300');
+                }
+            });
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // --- Contact Form Submission ---
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('success-message');
+            if (successMsg) successMsg.classList.remove('hidden');
+            const form = document.getElementById('contact-form');
+            if (form) form.reset();
+        }
+
+        function closeSuccessModal() {
+            const successMsg = document.getElementById('success-message');
+            if (successMsg) successMsg.classList.add('hidden');
+        }
+
+        // DOM Loaded Event Listeners & Canvas Initialization
+        window.addEventListener('DOMContentLoaded', () => {
+            // Set current year
+            const yearElem = document.getElementById('year');
+            if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+            // Before & After Comparison Slider Logic
+            const sliderContainer = document.getElementById('comparison-slider');
+            const beforeImg = document.getElementById('before-img-wrap');
+            const handle = document.getElementById('slider-handle');
+
+            if (sliderContainer && beforeImg && handle) {
+                let isDragging = false;
+
+                const setSliderPos = (x) => {
+                    const rect = sliderContainer.getBoundingClientRect();
+                    let offsetX = x - rect.left;
+                    if (offsetX < 0) offsetX = 0;
+                    if (offsetX > rect.width) offsetX = rect.width;
+                    const percent = (offsetX / rect.width) * 100;
+                    beforeImg.style.width = `${percent}%`;
+                    handle.style.left = `${percent}%`;
+                };
+
+                sliderContainer.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                    setSliderPos(e.clientX);
+                });
+                window.addEventListener('mouseup', () => isDragging = false);
+                window.addEventListener('mousemove', (e) => {
+                    if (isDragging) setSliderPos(e.clientX);
+                });
+
+                sliderContainer.addEventListener('touchstart', (e) => {
+                    isDragging = true;
+                    setSliderPos(e.touches[0].clientX);
+                });
+                window.addEventListener('touchend', () => isDragging = false);
+                window.addEventListener('touchmove', (e) => {
+                    if (isDragging) setSliderPos(e.touches[0].clientX);
+                });
+            }
+
+            // Scroll reveal animation
+            const scrollReveal = () => {
+                const reveals = document.querySelectorAll('.scroll-reveal');
+                reveals.forEach(el => {
+                    const windowHeight = window.innerHeight;
+                    const revealTop = el.getBoundingClientRect().top;
+                    if (revealTop < windowHeight - 50) el.classList.add('visible');
+                });
+            };
+            window.addEventListener('scroll', scrollReveal);
+            scrollReveal();
+
+            // Header scroll state
+            const header = document.getElementById('header');
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    header.classList.toggle('scrolled', window.scrollY > 50);
+                });
+            }
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+                });
+            }
+
+            // Theme Toggle Script
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+            const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+            if (themeToggleBtn && themeToggleDarkIcon && themeToggleLightIcon) {
+                if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    themeToggleLightIcon.classList.remove('hidden');
+                } else {
+                    themeToggleDarkIcon.classList.remove('hidden');
+                }
+
+                themeToggleBtn.addEventListener('click', function() {
+                    themeToggleDarkIcon.classList.toggle('hidden');
+                    themeToggleLightIcon.classList.toggle('hidden');
+                    document.documentElement.classList.toggle('dark');
+                    const isDark = document.documentElement.classList.contains('dark');
+                    localStorage.setItem('color-theme', isDark ? 'dark' : 'light');
+                });
+            }
+
+            // Animated Stats Counter
+            let statsAnimated = false;
+            const animateStats = () => {
+                const stats = document.getElementById('stats');
+                if (!stats || statsAnimated) return;
+                const revealTop = stats.getBoundingClientRect().top;
+                if (revealTop < window.innerHeight - 100) {
+                    statsAnimated = true;
+                    const counters = stats.querySelectorAll('p[data-target]');
+                    counters.forEach(counter => {
+                        const target = +counter.getAttribute('data-target');
+                        let current = 0;
+                        const step = Math.max(1, Math.ceil(target / 40));
+                        const update = () => {
+                            current += step;
+                            if (current < target) {
+                                counter.innerText = current;
+                                setTimeout(update, 25);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+                        update();
+                    });
+                }
+            };
+            window.addEventListener('scroll', animateStats);
+            animateStats();
+
+            // Particle Hero Canvas
+            const canvas = document.getElementById('hero-canvas');
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                let width = canvas.width = window.innerWidth;
+                let height = canvas.height = window.innerHeight;
+
+                window.addEventListener('resize', () => {
+                    width = canvas.width = window.innerWidth;
+                    height = canvas.height = window.innerHeight;
+                });
+
+                const particles = Array.from({ length: 45 }, () => ({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5,
+                    radius: Math.random() * 2 + 1
+                }));
+
+                function animateCanvas() {
+                    ctx.clearRect(0, 0, width, height);
+                    ctx.fillStyle = '#8CC63F';
+                    ctx.strokeStyle = 'rgba(140, 198, 63, 0.22)';
+
+                    particles.forEach((p, i) => {
+                        p.x += p.vx;
+                        p.y += p.vy;
+
+                        if (p.x < 0 || p.x > width) p.vx *= -1;
+                        if (p.y < 0 || p.y > height) p.vy *= -1;
+
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                        ctx.fill();
+
+                        for (let j = i + 1; j < particles.length; j++) {
+                            const p2 = particles[j];
+                            const dx = p.x - p2.x;
+                            const dy = p.y - p2.y;
+                            const dist = Math.sqrt(dx * dx + dy * dy);
+                            if (dist < 120) {
+                                ctx.beginPath();
+                                ctx.moveTo(p.x, p.y);
+                                ctx.lineTo(p2.x, p2.y);
+                                ctx.stroke();
+                            }
+                        }
+                    });
+
+                    requestAnimationFrame(animateCanvas);
+                }
+                animateCanvas();
+            }
+        });
+    </script>
+</body>
+</html>
